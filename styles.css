@@ -32,10 +32,6 @@ body {
     margin-bottom: 20px;
 }
 
-em {
-    font-size: 16px;
-}
-
 .speaker-form {
     background-color: #f6f7f8;
     border: 1px solid #d6d9dc;
@@ -54,20 +50,20 @@ em {
     flex-wrap: wrap;
 }
 
+
+
 .form-row input[type='text'],
 .form-row input[type='email'] {
     background-color: #ffffff;
     border: 1px solid #d6d9dc;
     border-radius: 3px;
-    width: 100%;
+    width: 250px;
     padding: 7px;
     font-size: 14px;
 }
 
-
 .form-row label {
     margin-bottom: 15px;
-    
 }
 
 .form-row input[type='text']:invalid,
@@ -79,17 +75,10 @@ em {
 .legacy-form-row {
     border: none;
     margin-bottom: 40px;
-    margin-top: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    
-    
 }
 
 .legacy-form-row legend {
     margin-bottom: 15px;
-    text-wrap: nowrap;
-    vertical-align: auto;
 }
 
 .legacy-form-row .radio-label{
@@ -99,7 +88,7 @@ em {
 } 
 
 .legacy-form-row input[type='radio']{
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .legacy-form-row .radio-label, 
@@ -112,47 +101,34 @@ em {
     .speaker-form {
         width: 600px;
     }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input [type='text'],
+    .form-row input [type='email'],
+    .form-row select,
+    .form-row textarea {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align:right;
+        padding-right: 20px;
+    }
+
+    .legacy-form-row legend {
+        float: left;
+    }
 }
-
-.form-row {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.form-row input [type='text']{
-    width: 250px;
-    height: initial;
-}
-
-.form-row label {
-    text-align: left;
-    width: 120px;
-    margin-top: 7px;
-    padding-right: 20px;
-}
-
-.legacy-form-row {
-    margin-bottom: 10px;
-}
-
-.legacy-form-row legend {
-    width: 120px;
-    text-align: center;
-    padding-right: 20px;
-   
-}
-
-.legacy-form-row legend {
-    float: left;
-
-}
-
-.form-row input [type='text'],
-.form-row input [type='email'],
-.form-row select,
-.form-row textarea {
-    width: 250px;
-    height: initial;
-}
-
